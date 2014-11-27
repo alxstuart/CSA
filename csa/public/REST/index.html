@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="script.js"></script>
+	<script src="globals.js"></script>
+</head>
+<body>
+
+<h1>RESTFUL CLIENT</h1>
+<p>The plan is to do restful stuff with Jquery.</p>
+<p>The admin password is taliesin </p>
+<ul>
+<li>Log in
+<form name="login"  accept-charset="utf-8">  
+    <ul>  
+        <li><label for="username">User Name</label>  
+        <input type="text" id="username" placeholder="Your User Name" required></li>  
+        <li><label for="password">Password</label>  
+        <input type="password" id="password" placeholder="password" required></li>  
+        <li>  
+        <button id="loginBtn">Log In</li>  
+    </ul>   
+</form>
+</li>
+<li>collect users
+<form>
+    <button id="getusers">download users</button>
+</form> 
+<div><table id="users"></table></div>
+</li>
+<li>select specific user</li>
+
+<li>search users</li>
+<li>See broadcasts</li>
+<form>
+    <button id="getbroadcasts">download broadcasts</button>
+</form> 
+<div><table id="broadcasts"></table></div>
+<li>submit broadcast</li>
+
+<li>submit user </li>
+<li>end session
+<form>
+    <button id="endsession">End this session</button>
+</form>  </li>
+</ul>
+</ul>
+</body>
+</html>
