@@ -3,6 +3,7 @@
 <head>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src="script.js"></script>
+	<script src="post.js"></script>
 	<script src="globals.js"></script>
 </head>
 <body>
@@ -29,7 +30,13 @@
 </form> 
 <div><table id="users"></table></div>
 </li>
-<li>select specific user</li>
+<li>select specific user
+	<div id="searcharea">
+<label for="search">live search</label>
+<p>Enter part of the name</p>
+<input type="search" name="search" id="search" placeholder="name or email" />
+</div>
+<div id="update"></div></li>
 
 <li>search users</li>
 <li>See broadcasts</li>
@@ -37,7 +44,19 @@
     <button id="getbroadcasts">download broadcasts</button>
 </form> 
 <div><table id="broadcasts"></table></div>
-<li>submit broadcast</li>
+<li>submit broadcast
+<form>
+	<textarea id="broadcastText"> </textarea><br>
+	<input type="radio" name="type" value="general">General News
+	<input type="radio" name="type" value="jon">Job News<br>
+	<input type="checkbox" name="" ="email" value="email">Email
+	<input type="checkbox"name="facebook" value="facebook">Facebook
+	<input type="checkbox" name="RSS" value="RSS">RSS
+	<input type="checkbox" name="atom" value="atom">Atom
+	<input type="checkbox" name="twitter" value="twitter">Twitter<br>
+	<input type="submit" value="Submit Broadcast">
+</form>	
+</li>
 
 <li>submit user </li>
 <li>end session
