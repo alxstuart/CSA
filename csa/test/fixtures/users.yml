@@ -1,6 +1,7 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
-
+#added id for interaction with broadcast/user test.
 one:
+  id: 1
   surname: Loftus
   firstname: Chris
   phone: 622422

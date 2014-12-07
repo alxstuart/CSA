@@ -2,7 +2,7 @@
 <html>
 <head>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script src="script.js"></script>
+	<script src="get.js"></script>
 	<script src="post.js"></script>
 	<script src="globals.js"></script>
 </head>
@@ -11,6 +11,7 @@
 <h1>RESTFUL CLIENT</h1>
 <p>The plan is to do restful stuff with Jquery.</p>
 <p>The admin password is taliesin </p>
+<a href='/client.html'>Go to client</a>
 <ul>
 <li>Log in
 <form name="login"  accept-charset="utf-8">  
@@ -44,21 +45,73 @@
     <button id="getbroadcasts">download broadcasts</button>
 </form> 
 <div><table id="broadcasts"></table></div>
+
+<li>Create New user
+<form name="userform" id="userform" method="post">
+First Name: <input type="text" name="user[firstname]" value =""/> <br/>
+Last Name: <input type="text" name="user[surname]" value ="" /> <br/>
+Phone Number : <input type="text" name="user[phone]" value=""/> <br/>
+Grad Year : <input type="text" name="user[grad_year]" value=""/> <br/>
+image : <input type="text" name="user[image_file]" value=""/> <br/>
+Jobs:<input checked="checked" id="jobs" name="user[jobs]" type="checkbox" value="1"/></br>
+Email : <input type="text" name="user[email]" value=""/> <br/>
+Login : <input type="text" name="user[user_detail_attributes][login]" value=""/> <br/>
+Password : <input type="text" name="user[user_detail_attributes][password]" value=""/> <br/>
+Retype Password : <input type="text" name="user[user_detail_attributes][password_confirmation]" value=""/> <br/>
+<input type ='submit' value="submit user">
+</form>
+	
+
+
+</li>
+
+
 <li>submit broadcast
-<form>
-	<textarea id="broadcastText"> </textarea><br>
-	<input type="radio" name="type" value="general">General News
-	<input type="radio" name="type" value="jon">Job News<br>
-	<input type="checkbox" name="" ="email" value="email">Email
-	<input type="checkbox"name="facebook" value="facebook">Facebook
-	<input type="checkbox" name="RSS" value="RSS">RSS
-	<input type="checkbox" name="atom" value="atom">Atom
-	<input type="checkbox" name="twitter" value="twitter">Twitter<br>
-	<input type="submit" value="Submit Broadcast">
+
+<form id="new_broadcast" name="new_broadcast" method="post" action="" accept-charset="UTF-8">
+<input id="page" name="page" type="hidden" value="1" />
+
+    <div id="broadcast-area" class="main-input-area">
+      <p>
+        <textarea cols="100%" id="broadcast_content" name="broadcast[content]" rows="10" title="Broadcast text goes here"></textarea>
+      <div id="">
+        <input type ='submit' value="submit post">
+      </div>
+
+    </div>
+
+    <div class="sub-input-area">
+      <div class="checkboxes">
+        <p>
+          <input checked="checked" id="feeds_alumni_email_cs-alumni" name="feeds[alumni_email]" title="Select to broadcast general news" type="radio" value="cs-alumni" />
+          <label for="feeds_alumni_email_alumni">General news</label>
+    
+          <input id="feeds_alumni_email_cs-alumni-jobs" name="feeds[alumni_email]" title="Select to broadcast jobs news" type="radio" value="cs-alumni-jobs" />
+          <label for="feeds_alumni_email_alumni-jobs">Jobs news</label>
+        </p>
+
+        <p>
+          <input checked="checked" id="feeds_email" name="feeds[email]" title="Select to choose Email feed" type="checkbox" value="1" />
+          <label for="email">Email</label>
+        
+          <input checked="checked" id="feeds_facebook" name="feeds[facebook]" title="Select to choose Facebook feed" type="checkbox" value="1" />
+          <label for="facebook">Facebook</label>
+        
+          <input checked="checked" id="feeds_RSS" name="feeds[RSS]" title="Select to choose RSS feed" type="checkbox" value="1" />
+          <label for="RSS">RSS</label>
+        
+          <input checked="checked" id="feeds_atom" name="feeds[atom]" title="Select to choose Atom feed" type="checkbox" value="1" />
+          <label for="atom">Atom</label>
+       
+          <input checked="checked" id="feeds_twitter" name="feeds[twitter]" title="Select to choose Twitter feed" type="checkbox" value="1" />
+          <label for="twitter">Twitter</label>
+        </p>
+      </div>
+    </div>
 </form>	
 </li>
 
-<li>submit user </li>
+
 <li>end session
 <form>
     <button id="endsession">End this session</button>

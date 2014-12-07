@@ -1,0 +1,6 @@
+#yml file for admin login
+one:
+    id: 1
+    login: admin
+    crypted_password: test123
+    user_id: 1

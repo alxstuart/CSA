@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<head>
+    <title>ABER CSA</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="" />
+    <!--
+        Solidity Template
+        http://www.templatemo.com/preview/templatemo_407_solidity
+    -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/templatemo_misc.css">
+        <link rel="stylesheet" href="css/templatemo_style.css">
+        <!-- JavaScripts -->
+        <script src="js/jquery-1.10.2.min.js"></script>
+        <script src="js/jquery.singlePageNav.js"></script>
+        <script src="js/jquery.flexslider.js"></script>
+        <script src="js/custom.js"></script>
+        <script src="js/jquery-1.10.2.min.js"></script>
+        <script src="js/templatemo_custom.js"></script>
+        <script src="get.js"></script>
+        <script src="post.js"></script>
+        <script src="globals.js"></script>
+        <script src="jquery.cookie.js"></script>
+    </head>
+    <div class="logoutbtn">
+                  <form>
+                    <input type="button" name="logoutBtn" id="logoutBtn" value="Logout Here">
+                  </form>
+                </div>
+    <body>
+        <!-- title start -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="templatemo_title"><a href="#">ABER CSA</a></div>
+                    <div class="templatemo_subtitle">SE31520</div>
+                </div>
+                
+        </div>
+        <!-- title end -->
+        <div class="site-header">
+            <div class="main-navigation">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <!-- This one in here is responsive menu for tablet and mobiles -->
+                            <div class="responsive-navigation visible-sm visible-xs">
+                                <a href="#" class="menu-toggle-btn">
+                                <i class="fa fa-bars fa-2x"></i>
+                                </a>
+                                <div class="navigation responsive_menu">
+                                    <ul>
+                                        <li><a class="show-1 templatemo_home" href="#">Home</a></li>
+                                        <li><a class="show-2 templatemo_page2" href="#">Users</a></li>
+                                        <li><a class="show-3 templatemo_page3" href="#">Profile</a></li>
+                                        <li><a class="show-5 templatemo_page5" href="#">Broadcasts</a></li>
+                                    </ul>
+                                    </div> <!-- /.responsive_menu -->
+                                    </div> <!-- /responsive_navigation -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 navigation">
+                                    <div class="row main_menu">
+                                        <div class="col-md-2"><a class="show-1 templatemo_home" href="#"><div class="fa fa-home"></div></a><h2>Home</h2></div>
+                                        <div class="col-md-2"><a class="show-2 templatemo_page2" href="#"><div class="fa fa-users"></div></a><h2>Users</h2></div>
+                                        <div class="col-md-2"><a class="show-3 templatemo_page3" href="#"><div class="fa fa-user"></div></a><h2>Profile</h2></div>
+                                        <div class="col-md-2"><a class="show-5 templatemo_page5" href="#"><div class="fa fa-pencil-square-o"></div></a><h2>Broadcasts</h2></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="menu-container">
+                    <div class="divs">
+                        <!-- landing page -->
+                        <div class="content homepage" id="menu-1">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h1>Home</h1>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <h4>Welcome to the Aberystwyth Computer Science Alumni portal.</h4>
+                                        <p>Please login using the form below.</p>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <form class="form" method="post" action="#">
+                                            <h2>Login Form</h2>
+                                            <label>Username:</label>
+                                            <input type="text" name="username" id="username">
+                                            <label>Password :</label>
+                                            <input type="password" name="password" id="password">
+                                            <input type="button" name="login" id="login" value="Login">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- landing page end-->
+                        <!-- Users-->
+                        <div class="content service" id="menu-2">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h1>Users</h1>
+                                    </div>
+                                </div>
+                                <div id="usersdiv">
+                                    <div class="row">
+                                        <div class="col-md-12"><p>Please log in to be able to view this content, or create an account.</p></div></div>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <!-- service end -->
+                            <!-- Jobs -->
+                            <div class="content portfolio" id="menu-3">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <h1>Your User Profile</h1>
+                                        </div>
+                                    </div>
+                                    <div id="profilediv">
+                                        <div class="row">
+                                            <div class="col-md-12"><p>You do not appear to have an account. Please login on the home page, or create a new account using the form below.</p></div></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Jobs -->
+                                <!-- contact start -->
+                                <div class="content contact" id="menu-5">
+                                    <div class="container">
+                                        <div class="row">
+                  
+                                            <div class="col-md-12">
+                                                <h1>Broadcasts</h1>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-8 col-sm-12">
+                                                <div class="col-md-12"><p>Please log in to be able to view this content, or create an account.</p>
+                                                    <p>A public feed of the broadcasts is available through Twitter.</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div id="broadcastContent">
+
+                                                    <div class=".col-sm-5 .col-sm-offset-2 .col-md-6 .col-md-offset-0">
+                                                        <a class="twitter-timeline" href="https://twitter.com/chris_loftus_te" data-widget-id="539504313266343938">Tweets by @chris_loftus_te</a>
+                                                        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- contact end -->
+                            </div>
+                        </div>
+                        <!-- footer start -->
+                        <div class="clear"></div>
+                        <div class="templatemo_footer">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <p>This design is a modification of the below template under creative commons.</p>
+                                        <div xmlns:cc="http://creativecommons.org/ns#" about="http://www.templatemo.com/"><a rel="cc:attributionURL" property="cc:attributionName" href="http://www.templatemo.com/preview/templatemo_407_solidity">solidity template</a> / <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></div></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- footer end -->
+                    </body>
+                </html>
