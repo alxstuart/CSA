@@ -3,7 +3,8 @@
     var urlBroadcasts = 'http://localhost:3000/broadcasts.json';
     var urlUsers = 'http://localhost:3000/users.json';
     hash = btoa(logInUser + ":" + logInPassword);
-$(function() {
+
+
    
     ///////////////////////////////////////////////////////////////////////
     //////////////////////////////////////////////////////////////////////  
@@ -49,8 +50,8 @@ $(function() {
 
     $('#new_broadcast').submit(function(e) {
         e.preventDefault(); //STOP default action
-        broadcast();
-        /*var myForm =$('#new_broadcast').serialize();
+        broadcast();}/*
+        var myForm =$('#new_broadcast').serialize();
          console.log(myForm);
          
 
@@ -74,8 +75,8 @@ $(function() {
                 alert('not posted');
             }
         });
-        return false;*/
-    });
+        return false;
+    });*/
     $('#userform').submit(function(e) {
         e.preventDefault(); //STOP default action
         console.log('a thing');
@@ -100,7 +101,9 @@ $(function() {
         return false;
     });
 });
+    function loadpages(){
 
+    }
 
     function broadcast() {
         var myForm = $('#new_broadcast').serialize();

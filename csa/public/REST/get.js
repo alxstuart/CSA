@@ -21,7 +21,7 @@ function reqestUsers(){
 				$('#users').append(tr) //table row 
 				
 				$.ajax({
-					url: urlUsers+'page='+userpage,
+					url: urlUsers+'page='+userspage,
 					beforeSend: function(xhr) {
 						hash = btoa(logInUser + ":" + logInPassword);
 						console.log(hash);
@@ -46,34 +46,14 @@ function reqestUsers(){
 function requestBroadcasts(){}
 
 $(function() {
-			
-
-		///////////////////////////////////////////////////////////////////////
-		//////////////////////////////////////////////////////////////////////	
-			//logging in
-			 $('#login').click(function(e) {
-                logInUser = $('#username').val();
-                logInPassword = $('#password').val();
-                alert(logInUser);
-                // set cookies to expire in 14 days
-                $.cookie('username', logInUser, {
-                    expires: 1
-                });
-                var something=$.cookie(username);
-                $.cookie('password', logInPassword, {
-                    expires: 1
-                });
-                $.cookie('remember', true, {
-                    expires: 1
-                });
+			$('#login').click(function(e) {
+                login();
             });
             $('#logoutBtn').click(function(e) {
-                // reset cookies
-                $.cookie('email', null);
-                $.cookie('password', null);
-                $.cookie('remember', null);
+                logout();
             });
-
+    
+			
             ///////////////////////////////////////////////////////////////////////
 		//////////////////////////////////////////////////////////////////////	
 			//loading pages
@@ -190,7 +170,7 @@ $(function() {
 				});
 
 				function pagination(direction) {
-					var 
+					
 				}
 				function finduser(userid) { //synchronus 
 					var name = ''; //generate name var
